@@ -13,7 +13,31 @@
 		9B5CD8B02BB98E2C0041988A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5CD8AE2BB98E2C0041988A /* Main.storyboard */; };
 		9B5CD8B22BB98E2F0041988A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5CD8B12BB98E2F0041988A /* Assets.xcassets */; };
 		9B5CD8B52BB98E2F0041988A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5CD8B32BB98E2F0041988A /* LaunchScreen.storyboard */; };
+		9B5CD8D62BB993D70041988A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CD8D52BB993D70041988A /* TableViewCell.swift */; };
+		9B5CD8DF2BB999CB0041988A /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8DE2BB999CB0041988A /* RxBlocking */; };
+		9B5CD8E12BB999CB0041988A /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8E02BB999CB0041988A /* RxBlocking-Dynamic */; };
+		9B5CD8E32BB999CB0041988A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8E22BB999CB0041988A /* RxCocoa */; };
+		9B5CD8E52BB999CB0041988A /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8E42BB999CB0041988A /* RxCocoa-Dynamic */; };
+		9B5CD8E72BB999CB0041988A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8E62BB999CB0041988A /* RxRelay */; };
+		9B5CD8E92BB999CB0041988A /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8E82BB999CB0041988A /* RxRelay-Dynamic */; };
+		9B5CD8EB2BB999CB0041988A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8EA2BB999CB0041988A /* RxSwift */; };
+		9B5CD8ED2BB999CB0041988A /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 9B5CD8EC2BB999CB0041988A /* RxSwift-Dynamic */; };
+		9B5CD8F32BB9B2720041988A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CD8F22BB9B2720041988A /* ListViewModel.swift */; };
+		9B5CD8F52BB9B2910041988A /* NumberElementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CD8F42BB9B2910041988A /* NumberElementModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B5CD8D82BB997A00041988A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9B5CD8A52BB98E2C0041988A /* TableViewRxswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewRxswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +48,9 @@
 		9B5CD8B12BB98E2F0041988A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B5CD8B42BB98E2F0041988A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B5CD8B62BB98E2F0041988A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B5CD8D52BB993D70041988A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9B5CD8F22BB9B2720041988A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9B5CD8F42BB9B2910041988A /* NumberElementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberElementModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +58,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5CD8ED2BB999CB0041988A /* RxSwift-Dynamic in Frameworks */,
+				9B5CD8E72BB999CB0041988A /* RxRelay in Frameworks */,
+				9B5CD8E52BB999CB0041988A /* RxCocoa-Dynamic in Frameworks */,
+				9B5CD8E92BB999CB0041988A /* RxRelay-Dynamic in Frameworks */,
+				9B5CD8E32BB999CB0041988A /* RxCocoa in Frameworks */,
+				9B5CD8DF2BB999CB0041988A /* RxBlocking in Frameworks */,
+				9B5CD8E12BB999CB0041988A /* RxBlocking-Dynamic in Frameworks */,
+				9B5CD8EB2BB999CB0041988A /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +91,26 @@
 		9B5CD8A72BB98E2C0041988A /* TableViewRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9B5CD8D42BB993C80041988A /* Cell */,
 				9B5CD8A82BB98E2C0041988A /* AppDelegate.swift */,
 				9B5CD8AA2BB98E2C0041988A /* SceneDelegate.swift */,
 				9B5CD8AC2BB98E2C0041988A /* ViewController.swift */,
+				9B5CD8F22BB9B2720041988A /* ListViewModel.swift */,
+				9B5CD8F42BB9B2910041988A /* NumberElementModel.swift */,
 				9B5CD8AE2BB98E2C0041988A /* Main.storyboard */,
 				9B5CD8B12BB98E2F0041988A /* Assets.xcassets */,
 				9B5CD8B32BB98E2F0041988A /* LaunchScreen.storyboard */,
 				9B5CD8B62BB98E2F0041988A /* Info.plist */,
 			);
 			path = TableViewRxswift;
+			sourceTree = "<group>";
+		};
+		9B5CD8D42BB993C80041988A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9B5CD8D52BB993D70041988A /* TableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +123,23 @@
 				9B5CD8A12BB98E2C0041988A /* Sources */,
 				9B5CD8A22BB98E2C0041988A /* Frameworks */,
 				9B5CD8A32BB98E2C0041988A /* Resources */,
+				9B5CD8D82BB997A00041988A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TableViewRxswift;
+			packageProductDependencies = (
+				9B5CD8DE2BB999CB0041988A /* RxBlocking */,
+				9B5CD8E02BB999CB0041988A /* RxBlocking-Dynamic */,
+				9B5CD8E22BB999CB0041988A /* RxCocoa */,
+				9B5CD8E42BB999CB0041988A /* RxCocoa-Dynamic */,
+				9B5CD8E62BB999CB0041988A /* RxRelay */,
+				9B5CD8E82BB999CB0041988A /* RxRelay-Dynamic */,
+				9B5CD8EA2BB999CB0041988A /* RxSwift */,
+				9B5CD8EC2BB999CB0041988A /* RxSwift-Dynamic */,
+			);
 			productName = TableViewRxswift;
 			productReference = 9B5CD8A52BB98E2C0041988A /* TableViewRxswift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 9B5CD89C2BB98E2C0041988A;
+			packageReferences = (
+				9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9B5CD8A62BB98E2C0041988A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5CD8F32BB9B2720041988A /* ListViewModel.swift in Sources */,
 				9B5CD8AD2BB98E2C0041988A /* ViewController.swift in Sources */,
+				9B5CD8D62BB993D70041988A /* TableViewCell.swift in Sources */,
+				9B5CD8F52BB9B2910041988A /* NumberElementModel.swift in Sources */,
 				9B5CD8A92BB98E2C0041988A /* AppDelegate.swift in Sources */,
 				9B5CD8AB2BB98E2C0041988A /* SceneDelegate.swift in Sources */,
 			);
@@ -300,6 +363,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +392,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +428,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B5CD8DE2BB999CB0041988A /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		9B5CD8E02BB999CB0041988A /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxBlocking-Dynamic";
+		};
+		9B5CD8E22BB999CB0041988A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		9B5CD8E42BB999CB0041988A /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxCocoa-Dynamic";
+		};
+		9B5CD8E62BB999CB0041988A /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		9B5CD8E82BB999CB0041988A /* RxRelay-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxRelay-Dynamic";
+		};
+		9B5CD8EA2BB999CB0041988A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		9B5CD8EC2BB999CB0041988A /* RxSwift-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B5CD8DD2BB999CB0041988A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = "RxSwift-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B5CD89D2BB98E2C0041988A /* Project object */;
 }
